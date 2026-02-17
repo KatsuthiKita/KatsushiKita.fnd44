@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+.close-winder {
+    display: none;
+}
+
+body {
+    width: 100vw;
+    height: 90vh;
+    text-align: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+/* ボタンの形、色、大きさ固定 */
+.all-button {
+    background-color: rgb(167, 124, 44);
+    border-radius: 50px;
+    color: #fff;
+    padding: 15px 60px;
+}
+
+#title {
+    justify-content: center;
+}
+
+.dice-number-item {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    font-size: 40px
+}
