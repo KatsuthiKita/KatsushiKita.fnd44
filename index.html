@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スーパーチンチロ対戦X</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+    <div id="title" name="screen-cange">
+        <h1>スーパーチンチロ対戦X</h1>
+        <input id="start-tintiro" class="all-button" type="button" value="チンチロスタート🎲">
+        <input id="last-tintiro" class="all-button" type="button" value="最後に">
+    </div>
+
+
+    <div id="main-title" name="screen-cange" class="close-winder">
+        <h2>掛け金入力してね</h2>
+        <p>現在の所持金<span id="start-money">10000</span>；</p>
+        <input id="bet-money" type="number" placeholder="掛け金入力">
+        <input id="money-send" class="all-button" type="button" value="チンチロ開始！">
+        <p id="money-item"></p>
+        <input id="money-end" class="all-button" class="close-winder" type="button" value="終了しますか？">
+    </div>
+
+    <div id="ko-title" class="close-winder">
+        <div class="dice-number-item">
+            <p id="ko-dice-item-1"></p>
+            <p id="ko-dice-item-2"></p>
+            <p id="ko-dice-item-3"></p>
+        </div>
+        <input id="ko-rendom-dice" class="all-button" type="button" value="子サイコロを振る"></input>
+        <input id="ko-change" class="all-button" type="button" value="親の画面へ"></input>
+        <p id="ko-result1"></p>
+        <p id="ko-result2"></p>
+    </div>
+
+    <div id="oya-title" class="close-winder">
+        <div class="dice-number-item">
+            <p id="oya-dice-item-1"></p>
+            <p id="oya-dice-item-2"></p>
+            <p id="oya-dice-item-3"></p>
+        </div>
+        <input id="oya-rendom-dice" class="all-button" type="button" value="親サイコロを振る"></input>
+        <input id="win-result" class="all-button" type="button" value="結果を見る"></input>
+        <p id="oya-result1"></p>
+        <p id="oya-result2"></p>
+    </div>
+
+    <div id="win-title" class="close-winder">
+        <p id="win-Player"></p>
+        <p id="win-Money"></p>
+        <input id="one-change" class="all-button" type="reset" value="もう一度賭ける"></input>
+        <input id="end-change" class="all-button" type="button" value="最終結果を見る"></input>
+    </div>
+
+    <div id="end-result-title" class="close-winder">
+        <h1>最終結果</h1>
+        <h3><span id="end-oya-ko"></span>の<span id="end-money"></span>です！</h3>
+        <input id="start-title-change" class="all-button" type="button" value="スタートに戻る"></input>
+    </div>
+
+
+    <div id="side-title" class="close-winder">
+        <p>
+
+        </p>
+    </div>
+
+    <div id="last-title" class="close-winder">
+        <h1>最後に</h1>
+
+        <h3>
+            20日間講義含めご指導いただきありがとうございました🐊<br>
+            上司、職場メンバーの皆様FNDを受講させていただきありがとうございました。
+        </h3><br>
+        <h3>
+            この20日間を通じてプログラミングに対する知識はもちろん<br>
+            これから学びを進める中で必要なことを多く学びました。
+        </h3>
+        <h3>
+            まだまだ始まったばかりだと思います、<br>
+            これで終わるのではなく技術を磨き職場に還元していきたいと思います。<br>
+        </h3>
+        <h2>
+            本当にありがとうございました。
+        </h2>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
