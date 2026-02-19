@@ -2,99 +2,118 @@
 <html lang="jp">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>スーパーチンチロ対戦X</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スーパーチンチロ対戦</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
 
-  <div id="title" name="screen-cange">
-    <h1>スーパーチンチロ対戦X</h1>
-    <img id="start-img" src="start.png"><br>
-    <div id="title-yoko">
-      <input id="start-tintiro" class="all-button" type="button" value="チンチロスタート🎲">
-      <input id="last-tintiro" class="all-button" type="button" value="最後に">
+    <div id="title" name="screen-cange">
+        <h1>スーパーチンチロ対戦</h1>
+        <img id="start-img" src="https://github.com/KatsuthiKita/KatsushiKita.fnd44/blob/main/start.png?raw=true"><br>
+        <div id="title-yoko">
+            <input id="start-tintiro" class="all-button" type="button" value="チンチロスタート🎲">
+            <input id="last-tintiro" class="all-button" type="button" value="最後に">
+        </div>
     </div>
-  </div>
 
-  <div id="main-title" name="screen-cange" class="close-winder">
-    <h2>掛け金入力してね</h2>
-    <p class="text-size">現在の所持金<span id="start-money">10000</span>；</p>
-    <input id="bet-money" type="number" placeholder="掛け金入力">
-    <input id="money-send" class="all-button" type="button" value="チンチロ開始！">
-    <p id="money-item"></p>
-    <input id="money-end" class="all-button" class="close-winder" type="button" value="終了しますか？">
-  </div>
-
-  <div id="side-title" class="close-winder">
-    <img src="role-list.png">
-  </div>
-  <div id="ko-title" class="close-winder">
-    <div class="dice-number-item">
-      <p id="ko-dice-item-1"></p>
-      <p id="ko-dice-item-2"></p>
-      <p id="ko-dice-item-3"></p>
+    <div id="main-title" name="screen-cange" class="close-winder">
+        <div id="left-main" class="half-display">
+            <h2>掛け金入力してね</h2>
+            <p class="text-size">現在の所持金<span id="start-money">10000</span>；</p>
+            <input id="bet-money" type="number" placeholder="掛け金入力">
+            <input id="money-send" class="all-button" type="button" value="チンチロ開始！"><br>
+            <input id="money-end" class="all-button" class="close-winder" type="button" value="終了する">
+            <p id="money-item"></p>
+        </div>
+        <div id="right-main" class="half-display">
+            <img src="https://github.com/KatsuthiKita/KatsushiKita.fnd44/blob/main/role-list.png?raw=true">
+        </div>
     </div>
-    <input id="ko-rendom-dice" class="all-button" type="button" value="子サイコロを振る"></input>
-    <input id="ko-change" class="all-button" type="button" value="親の画面へ"></input>
-    <p id="ko-result1" class="text-size"></p>
-    <p id="ko-result2" class="text-size"></p>
-  </div>
 
-  <div id="oya-title" class="close-winder">
-    <div class="dice-number-item">
-      <p id="oya-dice-item-1"></p>
-      <p id="oya-dice-item-2"></p>
-      <p id="oya-dice-item-3"></p>
+
+    <div id="ko-title" class="close-winder">
+        <div id="left-ko" class="half-display">
+            <div class="dice-number-item">
+                <img src="" id="ko-dice-item-1">
+                <img src="" id="ko-dice-item-2">
+                <img src="" id="ko-dice-item-3">
+            </div>
+            <div>
+                <input id="ko-rendom-dice" class="all-button" type="button" value="サイコロを振る"></input>
+                <input id="ko-change" class="all-button" type="button" value="親の番へ"></input>
+            </div>
+            <p id="ko-result1" class="text-size">役成立するかな？</p>
+            <p id="ko-result2" class="text-size">‘サイコロを振る’ボタン押してみよう</p>
+        </div>
+        <div id="right-ko" class="half-display">
+            <img src="https://github.com/KatsuthiKita/KatsushiKita.fnd44/blob/main/role-list.png?raw=true">
+        </div>
     </div>
-    <input id="oya-rendom-dice" class="all-button" type="button" value="親サイコロを振る"></input>
-    <input id="win-result" class="all-button" type="button" value="結果を見る"></input>
-    <p id="oya-result1" class="text-size"></p>
-    <p id="oya-result2" class="text-size"></p>
-  </div>
 
-  <div id="win-title" class="close-winder">
-    <p id="win-Player" class="text-size"></p>
-    <p id="win-Money" class="text-size"></p>
-    <input id="one-change" class="all-button" type="reset" value="もう一度賭ける"></input>
-    <input id="end-change" class="all-button" type="button" value="最終結果を見る"></input>
-  </div>
+    <div id="oya-title" class="close-winder">
+        <div id="left-oya" class="half-display">
+            <div class="dice-number-item">
+                <img src="" id="oya-dice-item-1">
+                <img src="" id="oya-dice-item-2">
+                <img src="" id="oya-dice-item-3">
+            </div>
+            <div class="center-item">
+                <input id="oya-rendom-dice" class="all-button" type="button" value="サイコロを振る"></input>
+                <input id="win-result" class="all-button" type="button" value="結果を見る"></input>
+            </div>
+            <p id="oya-result1" class="text-size">役成立するかな？</p>
+            <p id="oya-result2" class="text-size">‘サイコロを振る’ボタン押してみよう</p>
 
-  <div id="end-result-title" class="close-winder">
-    <h1>最終結果</h1>
-    <h3 class="text-size"><span id="end-oya-ko"></span>の<span id="end-money"></span></h3>
-    <input id="start-title-change" class="all-button" type="button" value="スタートに戻る"></input>
-  </div>
+        </div>
+        <div id="right-oya" class="half-display">
+            <img src="https://github.com/KatsuthiKita/KatsushiKita.fnd44/blob/main/role-list.png?raw=true">
+        </div>
+    </div>
 
+    <div id="win-title" class="close-winder">
+        <p id="win-Player" class="text-size"></p>
+        <p id="win-Money" class="text-size"></p>
+        <input id="one-change" class="all-button" type="reset" value="もう一度賭ける"></input>
+        <input id="end-change" class="all-button" type="button" value="最終結果を見る"></input>
+    </div>
 
-
-
-  <div id="last-title" class="close-winder">
-    <h1>最後に</h1>
-
-    <h3>
-      20日間講義含めご指導いただきありがとうございました🐊<br>
-      上司、職場メンバーの皆様FNDを受講させていただきありがとうございました。
-    </h3><br>
-    <h3>
-      この20日間を通じてプログラミングに対する知識はもちろん<br>
-      これから学びを進める中で必要なことを多く学びました。
-    </h3>
-    <h3>
-      まだまだ始まったばかりだと思います、<br>
-      これで終わるのではなく技術を磨き職場に還元していきたいと思います。<br>
-    </h3>
-    <h2>
-      本当にありがとうございました。
-    </h2>
+    <div id="end-result-title" class="close-winder">
+        <h1>最終結果</h1>
+        <h3 class="text-size"><span id="end-oya-ko"></span><span id="end-money"></span></h3>
+        <input id="start-title-change" class="all-button" type="button" value="スタートに戻る"></input>
+    </div>
 
 
-  </div>
 
 
-  <script src="script.js"></script>
+    <div id="last-title" class="close-winder">
+        <h1>最後に</h1>
+
+        <h3>
+            インストラクターの皆様
+            20日間講義含めご指導いただきありがとうございました🐊<br>
+            上司、職場メンバーの皆様FNDを受講させていただきありがとうございました。
+        </h3><br>
+        <h3>
+            この20日間を通じてプログラミングに対する知識はもちろん<br>
+            これからプログラムを進める中で必要なことを多く学びました。
+        </h3>
+        <h3>
+            まだまだ始まったばかりだと思います、<br>
+            これで終わるのではなく技術を磨き職場に還元していきたいと思います。<br>
+        </h3>
+        <h2>
+            本当にありがとうございました。
+        </h2>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
