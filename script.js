@@ -56,6 +56,23 @@ const dicePowerPosition = [
   { diceItems: [1, 2, 3], bet: 1 / 2, doubling: 1 / 2, text: "ヒフミ、、運がないね～倍払おう" },
 ];
 
+const diceItemList = new Array();
+
+diceItemList[0] = new Image();
+diceItemList[1] = new Image();
+diceItemList[1].src = "https://github.com/KatsuthiKita/KatsushiKita.fnd44/blob/main/dice1.png?raw=true"
+diceItemList[2] = new Image();
+diceItemList[2].src = "https://github.com/KatsuthiKita/KatsushiKita.fnd44/blob/main/dice2.png?raw=true"
+diceItemList[3] = new Image();
+diceItemList[3].src = "https://github.com/KatsuthiKita/KatsushiKita.fnd44/blob/main/dice3.png?raw=true"
+diceItemList[4] = new Image();
+diceItemList[4].src = "https://github.com/KatsuthiKita/KatsushiKita.fnd44/blob/main/dice4.png?raw=true"
+diceItemList[5] = new Image();
+diceItemList[5].src = "https://github.com/KatsuthiKita/KatsushiKita.fnd44/blob/main/dice5.png?raw=true"
+diceItemList[6] = new Image();
+diceItemList[6].src = "https://github.com/KatsuthiKita/KatsushiKita.fnd44/blob/main/dice6.png?raw=true"
+
+
 // 掛け金設定
 const moneySend = document.getElementById("money-send");
 const moneyItem = document.getElementById("money-item");
@@ -126,13 +143,9 @@ function aaa(obj) {
     const diceItem2 = Math.floor(Math.random() * (7 - 1) + 1);
     const diceItem3 = Math.floor(Math.random() * (7 - 1) + 1);
 
-    const oyaDiceItem1 = document.getElementById("oya-dice-item-1");
-    const oyaDiceItem2 = document.getElementById("oya-dice-item-2");
-    const oyaDiceItem3 = document.getElementById("oya-dice-item-3");
-
-    oyaDiceItem1.innerText = diceItem1;
-    oyaDiceItem2.innerText = diceItem2;
-    oyaDiceItem3.innerText = diceItem3;
+    document.getElementById("oya-dice-item-1").src = diceItemList[diceItem1].src;
+    document.getElementById("oya-dice-item-2").src = diceItemList[diceItem2].src;
+    document.getElementById("oya-dice-item-3").src = diceItemList[diceItem3].src;
 
     diceResult.push(diceItem1);
     diceResult.push(diceItem2);
@@ -181,13 +194,9 @@ function bbb(obj) {
     const diceItem2 = Math.floor(Math.random() * (7 - 1) + 1);
     const diceItem3 = Math.floor(Math.random() * (7 - 1) + 1);
 
-    const koDiceItem1 = document.getElementById("ko-dice-item-1");
-    const koDiceItem2 = document.getElementById("ko-dice-item-2");
-    const koDiceItem3 = document.getElementById("ko-dice-item-3");
-
-    koDiceItem1.innerText = diceItem1;
-    koDiceItem2.innerText = diceItem2;
-    koDiceItem3.innerText = diceItem3;
+    document.getElementById("ko-dice-item-1").src = diceItemList[diceItem1].src;
+    document.getElementById("ko-dice-item-2").src = diceItemList[diceItem2].src;
+    document.getElementById("ko-dice-item-3").src = diceItemList[diceItem3].src;
 
     diceResult.push(diceItem1);
     diceResult.push(diceItem2);
@@ -281,26 +290,6 @@ function change1() {
   betnum.value = "";
 
 }
-
-// //メイン画面表示　asideはもう表示でおｋ
-// const mainDisplayChange = document.getElementById("money-send");
-// mainDisplayChange.addEventListener("click", change2);
-// function change2() {
-
-//   const title = document.querySelector("#title");
-//   const main = document.querySelector("#main-title");
-//   const ko = document.querySelector("#ko-title");
-//   const oya = document.querySelector("#oya-title");
-//   const win = document.querySelector("#win-title");
-//   const endResult = document.querySelector("#end-result-title");
-//   const side = document.querySelector("#side-title");
-//   const last = document.querySelector("#last-title");
-
-
-//   main.classList.toggle("close-winder");
-//   ko.classList.toggle("close-winder");
-
-// }
 // 子のダイス画面
 const koDisplayChange = document.getElementById("ko-change");
 koDisplayChange.addEventListener("click", change3);
