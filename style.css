@@ -1,34 +1,75 @@
 @charset "UTF-8";
 
 .close-winder {
-    display: none;
+  display: none !important;
 }
 
 body {
-    width: 100vw;
-    height: 90vh;
-    text-align: center;
-    align-items: center;
-    background-color: antiquewhite;
+  width: 100vw;
+  height: 90vh;
+  background-color: antiquewhite;
 }
 
 /* ボタンの形、色、大きさ固定 */
 .all-button {
-    background-color: rgb(167, 124, 44);
-    border-radius: 50px;
-    color: #fff;
-    padding: 15px 60px;
+  background-color: rgb(247, 198, 109);
+  border-radius: 50px;
+  color: #000000;
+  padding: 15px 60px;
+  font-size: 20px;
 }
 
+/* 全体のテキストサイズ */
+.text-size {
+  font-size: 40px;
+}
+
+
+/* タイトル画面 */
 #title {
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+#title-yoko {
+  display: flex;
+}
+
+#start-img {
+  width: 55%;
+  text-align: center;
+  align-items: center;
+}
+
+/* 親子のダイスアイテム関係 */
 .dice-number-item {
-    justify-content: center;
-    display: flex;
-    position: relative;
-    text-align: center;
-    margin: auto;
-    font-size: 40px
+  justify-content: center;
+  display: flex;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  font-size: 70px
+}
+
+
+/* メイン画面設定 */
+#bet-money {
+  padding: 15px 60px;
+  border-radius: 50px;
+  padding: 15px 60px;
+  font-size: 20px;
+}
+
+#money-item {
+
+  font-size: 40px;
+  color: #ff0000;
+  ;
+}
+
+/* サイドアイテム関係 */
+#side-title {
+  display: flex;
+  align-items: end;
 }
