@@ -1,75 +1,155 @@
 @charset "UTF-8";
 
 .close-winder {
-  display: none !important;
+    display: none !important;
 }
 
 body {
-  width: 100vw;
-  height: 90vh;
-  background-color: antiquewhite;
+    width: 100vw;
+    height: 90vh;
+    background-color: antiquewhite;
 }
 
 /* ボタンの形、色、大きさ固定 */
 .all-button {
-  background-color: rgb(247, 198, 109);
-  border-radius: 50px;
-  color: #000000;
-  padding: 15px 60px;
-  font-size: 20px;
+    background-color: rgb(247, 198, 109);
+    border-radius: 50px;
+    color: #000000;
+    padding: 15px 60px;
+    font-size: 20px;
 }
 
 /* 全体のテキストサイズ */
 .text-size {
-  font-size: 40px;
+    font-size: 40px;
 }
 
 
 /* タイトル画面 */
 #title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #title-yoko {
-  display: flex;
+    display: flex;
 }
 
 #start-img {
-  width: 55%;
-  text-align: center;
-  align-items: center;
+    width: 55%;
+    text-align: center;
+    align-items: center;
 }
+
+/* メイン画面 */
+#main-title {
+    display: flex;
+}
+
+/* メイン画面を左右２分割 */
+.half-display {
+    flex: 1;
+}
+
+#left-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#right-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* 親子のダイスアイテム関係 */
 .dice-number-item {
-  justify-content: center;
-  display: flex;
-  position: relative;
-  text-align: center;
-  margin: auto;
-  font-size: 70px
+    justify-content: center;
+    display: flex;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    font-size: 50px
 }
 
 
 /* メイン画面設定 */
 #bet-money {
-  padding: 15px 60px;
-  border-radius: 50px;
-  padding: 15px 60px;
-  font-size: 20px;
+    padding: 15px 60px;
+    border-radius: 50px;
+    padding: 15px 60px;
+    font-size: 20px;
 }
 
 #money-item {
 
-  font-size: 40px;
-  color: #ff0000;
-  ;
+    font-size: 40px;
+    color: #ff0000;
+    ;
 }
 
 /* サイドアイテム関係 */
 #side-title {
-  display: flex;
-  align-items: end;
+    display: flex;
+    align-items: end;
+}
+
+/* 子画面 */
+#ko-title {
+    display: flex;
+}
+
+#left-ko {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#right-ko {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 親画面 */
+#oya-title {
+    display: flex;
+}
+
+#left-oya {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#right-oya {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-item {
+    flex-shrink: 2;
+}
+
+/* 勝ち負け画面 */
+#win-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 最終結果画面 */
+#end-result-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
