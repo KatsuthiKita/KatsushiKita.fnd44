@@ -337,6 +337,7 @@ function change4() {
 
   oya.classList.toggle("close-winder");
   win.classList.toggle("close-winder");
+  side.classList.toggle("close-winder");
 
 }
 // winリザルト画面 
